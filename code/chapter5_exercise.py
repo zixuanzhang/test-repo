@@ -31,20 +31,20 @@
 ##    count = count + 1
 ##    tot = tot + fval
 ##print(tot, count, tot/num)
-    
+
 
 # Exercise 2
-largest = None # or set to a negative number
+largest = None  # or set to a negative number
 smallest = None
 
 while True:
-    sval = input('Enter a number: ')
-    if sval == 'done':
+    sval = input("Enter a number: ")
+    if sval == "done":
         break
     try:
         fval = float(sval)
     except:
-        print('Invalid input')
+        print("Invalid input")
         continue
     if largest is None or fval > largest:
         largest = fval

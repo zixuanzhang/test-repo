@@ -1,7 +1,7 @@
 ## Chapter 6 exercise
 
 # print string backwards
-fruit = 'banana'
+fruit = "banana"
 index = -1
 while index >= (-len(fruit)):
     print(fruit[index])
@@ -15,20 +15,23 @@ def count(input_str, target):
             count = count + 1
     print(count)
 
-#count('banana', 'a')
+
+# count('banana', 'a')
 
 # compare Strings
 def compstr(query, subject):
     if query < subject:
-        print('Your word, ' + query + ', comes before', subject)
+        print("Your word, " + query + ", comes before", subject)
     elif query > subject:
-        print('Your word, ' + query + ', comes after', subject)
-    else: # word == subject
-        print('All right,', subject)
-#compstr('bb', 'banana')
+        print("Your word, " + query + ", comes after", subject)
+    else:  # word == subject
+        print("All right,", subject)
+
+
+# compstr('bb', 'banana')
 
 # exercise
-str = 'X-DSPAM-Confidence:0.8475'
+str = "X-DSPAM-Confidence:0.8475"
 colpos = str.find(":")
-num = float(str[colpos+1:])
+num = float(str[colpos + 1 :])
 print(num)
